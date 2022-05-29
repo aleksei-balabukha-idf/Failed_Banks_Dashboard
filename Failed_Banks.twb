@@ -1,0 +1,921 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0415.1144                               -->
+<workbook original-version='18.1' source-build='2022.1.1 (20221.22.0415.1144)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Failed_Banks' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='failed_banks' inline='true' name='federated.0ay3e850ea72bg12i83b40fobtfb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='failed_banks' name='textscan.1sp65nq0v6hs9l11avyy71nhtr1k'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='C:/Users/z004ejty/OneDrive - Siemens AG/Рабочий стол/portfolio/projects/Failed_banks_Dashboard/data/failed_banks.csv' dataRefreshTime='' directory='C:/Users/z004ejty/OneDrive - Siemens AG/Рабочий стол/portfolio/projects/Failed_banks_Dashboard/data' filename='failed_banks_processed.csv' interpretationMode='8' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1sp65nq0v6hs9l11avyy71nhtr1k' name='failed_banks_processed.csv' table='[failed_banks_processed#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ru_RU' separator=','>
+            <column datatype='string' name='Bank Name' ordinal='0' />
+            <column datatype='string' name='City' ordinal='1' />
+            <column datatype='string' name='State' ordinal='2' />
+            <column datatype='integer' name='Cert' ordinal='3' />
+            <column datatype='string' name='Acquiring Institution' ordinal='4' />
+            <column datatype='date' name='Closing Date' ordinal='5' />
+            <column datatype='integer' name='Fund' ordinal='6' />
+            <column datatype='string' name='State_full_name' ordinal='7' />
+            <column datatype='string' name='State_standard' ordinal='8' />
+            <column datatype='string' name='Country' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1sp65nq0v6hs9l11avyy71nhtr1k' name='failed_banks_processed.csv' table='[failed_banks_processed#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ru_RU' separator=','>
+            <column datatype='string' name='Bank Name' ordinal='0' />
+            <column datatype='string' name='City' ordinal='1' />
+            <column datatype='string' name='State' ordinal='2' />
+            <column datatype='integer' name='Cert' ordinal='3' />
+            <column datatype='string' name='Acquiring Institution' ordinal='4' />
+            <column datatype='date' name='Closing Date' ordinal='5' />
+            <column datatype='integer' name='Fund' ordinal='6' />
+            <column datatype='string' name='State_full_name' ordinal='7' />
+            <column datatype='string' name='State_standard' ordinal='8' />
+            <column datatype='string' name='Country' ordinal='9' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[failed_banks_processed.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ru&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;руб.&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ru_RU&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bank Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Bank Name]</local-name>
+            <parent-name>[failed_banks_processed.csv]</parent-name>
+            <remote-alias>Bank Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[failed_banks_processed.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[failed_banks_processed.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cert</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cert]</local-name>
+            <parent-name>[failed_banks_processed.csv]</parent-name>
+            <remote-alias>Cert</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Acquiring Institution</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Acquiring Institution]</local-name>
+            <parent-name>[failed_banks_processed.csv]</parent-name>
+            <remote-alias>Acquiring Institution</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Closing Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Closing Date]</local-name>
+            <parent-name>[failed_banks_processed.csv]</parent-name>
+            <remote-alias>Closing Date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fund</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Fund]</local-name>
+            <parent-name>[failed_banks_processed.csv]</parent-name>
+            <remote-alias>Fund</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State_full_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State_full_name]</local-name>
+            <parent-name>[failed_banks_processed.csv]</parent-name>
+            <remote-alias>State_full_name</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State_standard</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State_standard]</local-name>
+            <parent-name>[failed_banks_processed.csv]</parent-name>
+            <remote-alias>State_standard</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[failed_banks_processed.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Number of closed banks' datatype='integer' name='[Calculation_968273959408476160]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Bank Name])' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='date' name='[Closing Date]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='State___' datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State' datatype='string' name='[State_full_name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[State_standard]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='failed_banks_processed.csv' datatype='table' name='[__tableau_internal_object_id__].[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]' role='measure' type='quantitative' />
+      <column-instance column='[Closing Date]' derivation='Year' name='[yr:Closing Date:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (State)' hidden='true' name='[Action (State)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[State_full_name]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (YEAR(Closing Date))' hidden='true' name='[Action (YEAR(Closing Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:Closing Date:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/z004ejty/OneDrive - Siemens AG/Рабочий стол/portfolio/projects/Failed_banks_Dashboard/data/failed_banks.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='05/29/2022 10:09:29 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='failed_banks' increment-value='%null%' refresh-type='create' rows-inserted='563' timestamp-start='2022-05-29 10:09:28.852' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Bank Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Bank Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bank Name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>failed_banks_processed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>546</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>1</ordinal>
+              <family>failed_banks_processed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>433</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>2</ordinal>
+              <family>failed_banks_processed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cert</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cert]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cert</remote-alias>
+              <ordinal>3</ordinal>
+              <family>failed_banks_processed.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>563</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Acquiring Institution</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Acquiring Institution]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Acquiring Institution</remote-alias>
+              <ordinal>4</ordinal>
+              <family>failed_banks_processed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>297</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Closing Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Closing Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Closing Date</remote-alias>
+              <ordinal>5</ordinal>
+              <family>failed_banks_processed.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>258</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fund</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Fund]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fund</remote-alias>
+              <ordinal>6</ordinal>
+              <family>failed_banks_processed.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>563</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State_full_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State_full_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State_full_name</remote-alias>
+              <ordinal>7</ordinal>
+              <family>failed_banks_processed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State_standard</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State_standard]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State_standard</remote-alias>
+              <ordinal>8</ordinal>
+              <family>failed_banks_processed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>9</ordinal>
+              <family>failed_banks_processed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Russia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='failed_banks_processed.csv' id='failed_banks_processed.csv_DD332068046240818DEB2CA7F1F285C1'>
+            <properties context=''>
+              <relation connection='textscan.1sp65nq0v6hs9l11avyy71nhtr1k' name='failed_banks_processed.csv' table='[failed_banks_processed#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ru_RU' separator=','>
+                  <column datatype='string' name='Bank Name' ordinal='0' />
+                  <column datatype='string' name='City' ordinal='1' />
+                  <column datatype='string' name='State' ordinal='2' />
+                  <column datatype='integer' name='Cert' ordinal='3' />
+                  <column datatype='string' name='Acquiring Institution' ordinal='4' />
+                  <column datatype='date' name='Closing Date' ordinal='5' />
+                  <column datatype='integer' name='Fund' ordinal='6' />
+                  <column datatype='string' name='State_full_name' ordinal='7' />
+                  <column datatype='string' name='State_standard' ordinal='8' />
+                  <column datatype='string' name='Country' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.0ay3e850ea72bg12i83b40fobtfb'>
+      <datasources>
+        <datasource caption='failed_banks' name='federated.0ay3e850ea72bg12i83b40fobtfb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0ay3e850ea72bg12i83b40fobtfb'>
+        <column datatype='string' name='[Acquiring Institution]' role='dimension' type='nominal' />
+        <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+        <column datatype='date' name='[Closing Date]' role='dimension' type='ordinal' />
+        <column caption='State' datatype='string' name='[State_full_name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column-instance column='[Acquiring Institution]' derivation='None' name='[none:Acquiring Institution:nk]' pivot='key' type='nominal' />
+        <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Closing Date]' derivation='None' name='[none:Closing Date:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[State_full_name]' derivation='None' name='[none:State_full_name:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0ay3e850ea72bg12i83b40fobtfb].[none:Acquiring Institution:nk]'>
+        <groupfilter function='level-members' level='[none:Acquiring Institution:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0ay3e850ea72bg12i83b40fobtfb].[none:City:nk]'>
+        <groupfilter function='level-members' level='[none:City:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='quantitative' column='[federated.0ay3e850ea72bg12i83b40fobtfb].[none:Closing Date:qk]' included-values='in-range'>
+        <min>#2000-10-13#</min>
+        <max>#2020-10-23#</max>
+      </filter>
+      <filter class='categorical' column='[federated.0ay3e850ea72bg12i83b40fobtfb].[none:State_full_name:nk]'>
+        <groupfilter function='level-members' level='[none:State_full_name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter1' name='[Action1_4F2A2B6E0A834941B0DEE036D88924B5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Falied Banks' type='sheet' worksheet='Map' />
+      <link caption='Filter1' delimiter=',' escape='\' expression='tsl:Falied%20Banks?%5Bfederated.0ay3e850ea72bg12i83b40fobtfb%5D.%5BState_full_name%5D~s0=&lt;[federated.0ay3e850ea72bg12i83b40fobtfb].[State_full_name]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Map' />
+        <param name='target' value='Falied Banks' />
+      </command>
+    </action>
+    <action caption='Filter2' name='[Action2_51FB5586C3E04C5A8029952225CBE16E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Falied Banks' type='sheet' worksheet='Dynamics' />
+      <link caption='Filter2' delimiter=',' escape='\' expression='tsl:Falied%20Banks?%5Bfederated.0ay3e850ea72bg12i83b40fobtfb%5D.%5Byr%3AClosing%20Date%3Aok%5D~s0=&lt;[federated.0ay3e850ea72bg12i83b40fobtfb].[yr:Closing Date:ok]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Dynamics' />
+        <param name='target' value='Falied Banks' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='failed_banks' name='federated.0ay3e850ea72bg12i83b40fobtfb' />
+    </datasources>
+    <datasource-dependencies datasource='federated.0ay3e850ea72bg12i83b40fobtfb'>
+      <column datatype='date' name='[Closing Date]' role='dimension' type='ordinal' />
+      <column caption='State' datatype='string' name='[State_full_name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[Closing Date]' derivation='Year' name='[yr:Closing Date:ok]' pivot='key' type='ordinal' />
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='Dynamics'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='failed_banks' name='federated.0ay3e850ea72bg12i83b40fobtfb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ay3e850ea72bg12i83b40fobtfb'>
+            <column datatype='string' name='[Acquiring Institution]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Bank Name]' role='dimension' type='nominal' />
+            <column caption='Number of closed banks' datatype='integer' name='[Calculation_968273959408476160]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Bank Name])' />
+            </column>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='date' name='[Closing Date]' role='dimension' type='ordinal' />
+            <column caption='State' datatype='string' name='[State_full_name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Acquiring Institution]' derivation='None' name='[none:Acquiring Institution:nk]' pivot='key' type='nominal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Closing Date]' derivation='None' name='[none:Closing Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[State_full_name]' derivation='None' name='[none:State_full_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_968273959408476160]' derivation='User' name='[usr:Calculation_968273959408476160:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Closing Date]' derivation='Year' name='[yr:Closing Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ay3e850ea72bg12i83b40fobtfb].[Action (State)]'>
+            <groupfilter function='level-members' level='[State_full_name]' user:ui-action-filter='[Action1_4F2A2B6E0A834941B0DEE036D88924B5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ay3e850ea72bg12i83b40fobtfb].[none:State_full_name:nk]</column>
+            <column>[federated.0ay3e850ea72bg12i83b40fobtfb].[none:Acquiring Institution:nk]</column>
+            <column>[federated.0ay3e850ea72bg12i83b40fobtfb].[none:City:nk]</column>
+            <column>[federated.0ay3e850ea72bg12i83b40fobtfb].[none:Closing Date:qk]</column>
+            <column>[federated.0ay3e850ea72bg12i83b40fobtfb].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.0ay3e850ea72bg12i83b40fobtfb].[usr:Calculation_968273959408476160:qk]</rows>
+        <cols>[federated.0ay3e850ea72bg12i83b40fobtfb].[yr:Closing Date:ok]</cols>
+      </table>
+      <simple-id uuid='{95C8342A-AE3A-4B12-87E9-D2B40C618DA0}' />
+    </worksheet>
+    <worksheet name='Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='failed_banks' name='federated.0ay3e850ea72bg12i83b40fobtfb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ay3e850ea72bg12i83b40fobtfb'>
+            <column datatype='string' name='[Acquiring Institution]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Bank Name]' role='dimension' type='nominal' />
+            <column caption='Number of closed banks' datatype='integer' name='[Calculation_968273959408476160]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Bank Name])' />
+            </column>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='date' name='[Closing Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='State' datatype='string' name='[State_full_name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Acquiring Institution]' derivation='None' name='[none:Acquiring Institution:nk]' pivot='key' type='nominal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Closing Date]' derivation='None' name='[none:Closing Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[State_full_name]' derivation='None' name='[none:State_full_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_968273959408476160]' derivation='User' name='[usr:Calculation_968273959408476160:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Closing Date]' derivation='Year' name='[yr:Closing Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ay3e850ea72bg12i83b40fobtfb].[Action (YEAR(Closing Date))]'>
+            <groupfilter function='level-members' level='[yr:Closing Date:ok]' user:ui-action-filter='[Action2_51FB5586C3E04C5A8029952225CBE16E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ay3e850ea72bg12i83b40fobtfb].[none:Closing Date:qk]</column>
+            <column>[federated.0ay3e850ea72bg12i83b40fobtfb].[none:State_full_name:nk]</column>
+            <column>[federated.0ay3e850ea72bg12i83b40fobtfb].[none:Acquiring Institution:nk]</column>
+            <column>[federated.0ay3e850ea72bg12i83b40fobtfb].[none:City:nk]</column>
+            <column>[federated.0ay3e850ea72bg12i83b40fobtfb].[Action (YEAR(Closing Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ay3e850ea72bg12i83b40fobtfb].[Longitude (generated)]' field-type='quantitative' max='-7101856.9642690998' min='-14827123.290557252' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0ay3e850ea72bg12i83b40fobtfb].[Latitude (generated)]' field-type='quantitative' max='7135301.8699483359' min='919342.14984781924' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0ay3e850ea72bg12i83b40fobtfb].[usr:Calculation_968273959408476160:qk]' />
+              <text column='[federated.0ay3e850ea72bg12i83b40fobtfb].[usr:Calculation_968273959408476160:qk]' />
+              <lod column='[federated.0ay3e850ea72bg12i83b40fobtfb].[none:Country:nk]' />
+              <lod column='[federated.0ay3e850ea72bg12i83b40fobtfb].[none:State_full_name:nk]' />
+              <geometry column='[federated.0ay3e850ea72bg12i83b40fobtfb].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ay3e850ea72bg12i83b40fobtfb].[Latitude (generated)]</rows>
+        <cols>[federated.0ay3e850ea72bg12i83b40fobtfb].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{8E1F4906-B363-4369-83FD-93DCAEDC7775}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Falied Banks'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#e6e6e6' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='failed_banks' name='federated.0ay3e850ea72bg12i83b40fobtfb' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0ay3e850ea72bg12i83b40fobtfb'>
+        <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+        <column datatype='date' name='[Closing Date]' role='dimension' type='ordinal' />
+        <column caption='State' datatype='string' name='[State_full_name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+        <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Closing Date]' derivation='None' name='[none:Closing Date:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[State_full_name]' derivation='None' name='[none:State_full_name:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='11488' id='5' param='vert' type-v2='layout-flow' w='99050' x='475' y='875'>
+            <zone h='4595' id='7' type-v2='title' w='99050' x='475' y='875'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='5689' id='15' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='99050' x='475' y='5470'>
+              <zone h='5690' id='13' name='Map' param='[federated.0ay3e850ea72bg12i83b40fobtfb].[none:Closing Date:qk]' type-v2='filter' values='database' w='19834' x='475' y='5470'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5690' id='14' mode='checkdropdown' name='Map' param='[federated.0ay3e850ea72bg12i83b40fobtfb].[none:State_full_name:nk]' show-apply='true' type-v2='filter' values='database' w='19834' x='20309' y='5470'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5690' id='17' mode='checkdropdown' name='Map' param='[federated.0ay3e850ea72bg12i83b40fobtfb].[none:City:nk]' show-apply='true' type-v2='filter' values='database' w='19833' x='40143' y='5470'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5690' id='18' type-v2='empty' w='19775' x='59976' y='5470'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5690' id='16' type-v2='empty' w='19774' x='79751' y='5470'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='86762' id='9' param='horz' type-v2='layout-flow' w='99050' x='475' y='12363'>
+            <zone fixed-size='846' h='86762' id='10' is-fixed='true' name='Dynamics' w='50713' x='475' y='12363'>
+              <layout-cache minheight='184' type-h='scalable' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+            <zone h='86762' id='11' name='Map' w='48337' x='51188' y='12363'>
+              <layout-cache minwidth='202' type-h='fixed' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{0D1401FF-AA4C-48F6-98EF-75CD8E725F7B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Falied Banks'>
+      <viewpoints>
+        <viewpoint name='Dynamics'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{125D4F71-066C-4CA6-AAD5-30B5446B8819}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Dynamics'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ay3e850ea72bg12i83b40fobtfb].[none:Acquiring Institution:nk]</field>
+            <field>[federated.0ay3e850ea72bg12i83b40fobtfb].[none:State:nk]</field>
+            <field>[federated.0ay3e850ea72bg12i83b40fobtfb].[none:State_full_name:nk]</field>
+            <field>[federated.0ay3e850ea72bg12i83b40fobtfb].[yr:Closing Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D39AFD0E-3D91-404C-8B2E-DCE929D7B472}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ay3e850ea72bg12i83b40fobtfb].[usr:Calculation_968273959408476160:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ay3e850ea72bg12i83b40fobtfb].[none:City:nk]</field>
+            <field>[federated.0ay3e850ea72bg12i83b40fobtfb].[none:Closing Date:qk]</field>
+            <field>[federated.0ay3e850ea72bg12i83b40fobtfb].[none:State:nk]</field>
+            <field>[federated.0ay3e850ea72bg12i83b40fobtfb].[usr:Calculation_968273959408476160:qk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{C047EB4B-85F7-443C-8169-0656593AD006}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Falied Banks' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
